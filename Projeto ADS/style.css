@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #5c0086 9.62%, #a00000 65.61%)
+}
+
+.cabeçalho {
+  background-color: #000000;
+  border-bottom: #af02ff solid 1px;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+  height: 4.5rem;
+}
+
+.cabeçalho-imagem {
+  height: 50px;
+  width: 80px;
+}
+
+.cabeçalho-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.cabeçalho-menu-item {
+  font-family: 'Sarala', sans-serif;
+  color: #FBF5F0;
+  font-weight: 400;
+  font-size: 18px;
+}
+.cabeçalho-menu-item:hover {
+  border-bottom: 3px solid #ffffff;
+  transition: 0.4s;
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #FBF5F0;
+  padding: 100px;
+}
+
+.conteudo-principal {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display:flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #E3E3E3;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family:'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #E3E3E3;
+}
+
+.conteudo-principal-escrito-botao {
+  background-color: #E3E3E3;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgb(239, 3, 248);
+  border-radius: 20px;
+  font-family:'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2F2325;
+  cursor: pointer;
+}
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgb(255, 0, 251);
+  transition: 0.4s;
+}
+
+.conteudo-principal-imagem {
+  height: 300px;
+  width: 350px;
+  border-radius: 60px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #FBF5F0;
+  padding-top: 48px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FBF5F0;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family:'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #E3E3E3;
+}
+
+.rodape {
+  height: 5rem;
+  background-color: #000000;
+  padding: 32px;
+  border-top: 0.4px solid #af02ff;
+}
+
+.rodape-imagem {
+  height: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.c-title{
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 35px;
+  color: #E3E3E3;
+  padding: 20px 20px;
+}
+
+.c-paragraph{
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  color: #E3E3E3;
+  padding-left: 20px;
+}
+
+.card{
+  width: 100%;
+  height: 400px;
+  max-width: 300px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card, .card *{
+  box-sizing: border-box;
+  transition: 400ms;
+}
+
+.cards{
+  display: flex;
+  padding: 3rem 0.5rem 3rem 0.5rem;
+}
+
+.card-image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-title{
+  text-align: center;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.card-content{
+  position: absolute;
+  right: 32px;
+  bottom: 48px;
+  left: 32px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.75rem;
+  opacity: 0;
+}
+
+.card-button{
+  background-color: #000000;
+  width: 100px;
+  height: 45px;
+  border: none;
+  box-shadow: 4px 5px 4px rgb(239, 3, 248);
+  border-radius: 20px;
+  font-family:'Sarala', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.card:hover .card-image{
+  transform: translateY(-48px);
+}
+
+.card:hover .card-image img{
+  transform: translate(-16px, 42px) rotate(-16deg) scale(1.4);
+}
+
+.card:hover .card-content{
+  opacity: 1;
+}
+
+.card-1:hover{
+  background-color: hsl(271, 76%, 53%)
+}
+
+.card-2:hover{
+  background-color: hsl(39, 97%, 40%);
+}
+
+.card-3:hover{
+  background-color: hsl(60, 94%, 20%);
+}
+
+.card-4:hover{
+  background-color: hsl(0, 100%, 51%);
+}
+
+.card-5:hover{
+  background-color: hsl(207, 100%, 50%);
+}
+
+.card-button:hover{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+}
